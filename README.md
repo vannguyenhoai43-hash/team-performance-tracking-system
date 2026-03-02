@@ -48,7 +48,7 @@ Sheet bao gồm bảng mô tả task chi tiết kết hợp với dashboard tổ
 
 Sheet dùng để đánh giá hiệu suất theo từng thành viên hoặc toàn team theo tháng hoặc quý, đồng thời dự báo khả năng đạt KPI vào cuối kỳ.
 
-1. Phân tích KPI của từng thành viên và toàn team
+#### 1. Phân tích KPI của từng thành viên và toàn team
 
   Phần này theo dõi bộ KPI gồm Orders, AdGMV, Paid Ads, Livestream và Video.
   
@@ -61,7 +61,7 @@ Sheet dùng để đánh giá hiệu suất theo từng thành viên hoặc toà
 
 [pfm_PIC](images/pfm_pic_tracker)
 
-2. Dự đoán hiệu suất KPI
+#### 2. Dự đoán hiệu suất KPI
    
 Dự báo khả năng hoàn thành KPI vào cuối tháng dựa trên:
 
