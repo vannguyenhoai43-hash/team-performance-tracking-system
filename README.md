@@ -97,7 +97,7 @@ Dashboard tự động cập nhật theo shop và thành viên được chọn.
 
 [pfm_shop](images/pfm_shop)
 
-FILE CHI TIẾT  [TẠI ĐÂY](images/full_tracker)
+**FILE CHI TIẾT**  [TẠI ĐÂY](https://docs.google.com/spreadsheets/d/1Yenltej4gWU9nJimhRiPbkxyMMUPeSArb9E1LzAAtMI/edit?gid=1802438500#gid=1802438500)
 
 ## 4. Giá trị hệ thống
 
