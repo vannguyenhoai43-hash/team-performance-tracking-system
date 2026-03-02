@@ -18,7 +18,7 @@ Cập nhật dữ liệu hiệu suất KPI hàng ngày hoặc hàng tuần Khi d
 
 Các sheet dashboard tự động cập nhật theo công thức
 
-### **Sheet 2 – Dashboard Tổng quan ** 
+### **Sheet 2 – Dashboard Tổng quan** 
 
 Dashboard tổng quan hiệu suất toàn team theo tháng. 
 
@@ -31,7 +31,7 @@ Dashboard hiển thị:
 
 [overview](images/overview_tracker)
     
-### **Sheet 4 – Theo dõi Task ** 
+### **Sheet 4 – Theo dõi Task** 
 
 Task Tracker là trung tâm quản lý và giám sát toàn bộ công việc của team theo ngày, tuần, tháng. 
 
