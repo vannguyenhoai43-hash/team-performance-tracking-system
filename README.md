@@ -29,7 +29,7 @@ Dashboard hiển thị:
   - Phân bổ công việc theo nhóm / loại task
   - Người dùng có thể tương tác thông qua bộ lọc theo thời gian và tên PIC để theo dõi hiệu suất linh hoạt.
 
-[overview](images/overview_tracker.png)
+![overview](images/overview_tracker.png)
     
 ### **Sheet 4 – Theo dõi Task** 
 
@@ -42,7 +42,7 @@ Sheet bao gồm bảng mô tả task chi tiết kết hợp với dashboard tổ
 - Phân tích workload và mức độ hoàn thành theo thời gian
 - Phân loại công việc theo mức độ ưu tiên và nhóm nhiệm vụ
 
-[task_tracker](images/task_tracker.png)
+![task_tracker](images/task_tracker.png)
 
 ### **Sheet 5 – Hiệu suất KPI của thành viên**
 
@@ -59,7 +59,7 @@ Sheet dùng để đánh giá hiệu suất theo từng thành viên hoặc toà
    - Phân tích nguyên nhân thiếu hụt theo shop phụ trách
    - Theo dõi xu hướng 3 tháng gần nhất
 
-[pfm_PIC](images/pfm_pic_tracker.png)
+![pfm_PIC](images/pfm_pic_tracker.png)
 
 #### 2. Dự đoán hiệu suất KPI
    
@@ -73,7 +73,7 @@ Dự báo khả năng hoàn thành KPI vào cuối tháng dựa trên:
 
 Kết quả forecast được đối chiếu với target để đánh giá mức độ hoàn thành và phát hiện sớm rủi ro không đạt KPI.
 
-[pfm_PIC](images/forecast_tracker.png)
+![pfm_PIC](images/forecast_tracker.png)
 
 ### Sheet 6 – Hiệu suất theo shop
 
@@ -95,7 +95,7 @@ Dashboard tự động cập nhật theo shop và thành viên được chọn.
 - Lượt thêm vào giỏ hàng theo kênh
 - Khả năng ra đơn hàng theo các ngày trong tuần
 
-[pfm_shop](images/pfm_shop.png)
+![pfm_shop](images/pfm_shop.png)
 
 **FILE CHI TIẾT** [TẠI ĐÂY](https://docs.google.com/spreadsheets/d/1Yenltej4gWU9nJimhRiPbkxyMMUPeSArb9E1LzAAtMI/edit?gid=1802438500#gid=1802438500)
 
