@@ -1,4 +1,4 @@
-# Project : team-performance-tracking-system
+# Hệ thống theo dõi hiệu suất team - Google Sheet
 
 ## 1. **Giới thiệu dự án** 
 Dự án xây dựng hệ thống theo dõi hiệu suất (Performance Tracking System) cho team thông qua Google Sheets, cho phép:
