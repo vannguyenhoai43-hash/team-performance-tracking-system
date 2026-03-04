@@ -1,110 +1,126 @@
-# Hệ thống theo dõi hiệu suất team - Google Sheet
+# Team Performance Tracking System – Google Sheets
 
-## 1. **Giới thiệu dự án** 
-Dự án xây dựng hệ thống theo dõi hiệu suất (Performance Tracking System) cho team thông qua Google Sheets, cho phép:
+## 1. **Project Overview**
 
-- Theo dõi hiệu suất theo ngày, tuần, tháng của từng thành viên và của cả team
-- Giám sát tiến độ công việc và trạng thái task
-- Tự động tính toán KPI và dashboard tổng hợp
-- Hỗ trợ quản lý ra quyết định nhanh chóng
+This project builds a **Performance Tracking System** for a team using Google Sheets, enabling:
 
-Toàn bộ dữ liệu trong dashboard là dữ liệu mô phỏng dựa trên cấu trúc thực tế, không sử dụng dữ liệu nhạy cảm.
+- Tracking daily, weekly, and monthly performance of each member and the entire team  
+- Monitoring work progress and task status  
+- Automatically calculating KPIs and generating summary dashboards  
+- Supporting fast and data-driven managerial decision-making  
 
-## **2. Cấu trúc hệ thống Sheet** 
+All data displayed in the dashboard is simulated based on a real-world structure and does not contain any sensitive information.
 
-### **Sheet 1 – Data Input** 
+---
 
-Cập nhật dữ liệu hiệu suất KPI hàng ngày hoặc hàng tuần Khi dữ liệu được cập nhật:
+## 2. **Sheet Structure**
 
-Các sheet dashboard tự động cập nhật theo công thức
+### **Sheet 1 – Data Input**
 
-### **Sheet 2 – Dashboard Tổng quan** 
+This sheet is used to update KPI performance data on a daily or weekly basis.  
 
-Dashboard tổng quan hiệu suất toàn team theo tháng. 
+Once the data is updated:
 
-Dashboard hiển thị: 
+- All dashboard sheets are automatically refreshed through built-in formulas.
 
-  - Tổng số task và trạng thái thực hiện 
-  - KPI Score và Efficiency của toàn team và theo từng PIC
-  - Phân bổ công việc theo nhóm / loại task
-  - Người dùng có thể tương tác thông qua bộ lọc theo thời gian và tên PIC để theo dõi hiệu suất linh hoạt.
+---
+
+### **Sheet 2 – Overview Dashboard**
+
+A monthly performance overview dashboard for the entire team.
+
+The dashboard displays:
+
+- Total number of tasks and their execution status  
+- KPI Score and Efficiency for the whole team and by individual PIC  
+- Work allocation by group / task category  
+- Interactive filters by time period and PIC name for flexible performance tracking  
 
 ![overview](images/overview_tracker.png)
-    
-### **Sheet 4 – Theo dõi Task** 
 
-Task Tracker là trung tâm quản lý và giám sát toàn bộ công việc của team theo ngày, tuần, tháng. 
+---
 
-Sheet bao gồm bảng mô tả task chi tiết kết hợp với dashboard tổng hợp nhằm:
+### **Sheet 4 – Task Tracking**
 
-- Theo dõi tiến độ thực hiện và tình trạng deadline
-- Đánh giá hiệu suất của toàn team và từng PIC
-- Phân tích workload và mức độ hoàn thành theo thời gian
-- Phân loại công việc theo mức độ ưu tiên và nhóm nhiệm vụ
+The Task Tracker serves as the central hub for managing and monitoring all team tasks on a daily, weekly, and monthly basis.
+
+This sheet combines a detailed task table with a summary dashboard to:
+
+- Track task progress and deadline status  
+- Evaluate team and individual PIC performance  
+- Analyze workload and completion rates over time  
+- Classify tasks by priority level and task group  
 
 ![task_tracker](images/task_tracker.png)
 
-### **Sheet 5 – Hiệu suất KPI của thành viên**
+---
 
-Sheet dùng để đánh giá hiệu suất theo từng thành viên hoặc toàn team theo tháng hoặc quý, đồng thời dự báo khả năng đạt KPI vào cuối kỳ.
+### **Sheet 5 – Member KPI Performance**
 
-#### 1. Phân tích KPI của từng thành viên và toàn team
+This sheet evaluates performance at both the individual and team levels by month or quarter, while also forecasting KPI achievement by the end of the period.
 
-  Phần này theo dõi bộ KPI gồm Orders, AdGMV, Paid Ads, Livestream và Video.
-  
-  Người dùng có thể chọn theo tháng, theo quý, theo từng thành viên hoặc toàn team, số liệu và biểu đồ sẽ tự động cập nhật.
-  
-  Dashboard giúp:
-   - So sánh mức độ hoàn thành KPI theo thành viên và toàn team
-   - Phân tích nguyên nhân thiếu hụt theo shop phụ trách
-   - Theo dõi xu hướng 3 tháng gần nhất
+#### 1. KPI Performance Analysis (Individual & Team)
+
+This section tracks the KPI set including: **Orders, Ad GMV, Paid Ads, Livestream, and Video**.
+
+Users can filter by month, quarter, individual member, or the entire team. Data and charts update automatically.
+
+The dashboard helps to:
+
+- Compare KPI achievement levels between members and the whole team  
+- Analyze performance gaps by assigned shop  
+- Track trends over the most recent 3 months  
 
 ![pfm_PIC](images/pfm_pic_tracker.png)
 
-#### 2. Dự đoán hiệu suất KPI
-   
-Dự báo khả năng hoàn thành KPI vào cuối tháng dựa trên:
+---
 
-- Runrate thực tế tại thời điểm hiện tại
+#### 2. KPI Performance Forecast
 
-- So sánh với cùng kỳ và tháng trước
+Forecasts the likelihood of KPI achievement by the end of the month based on:
 
-- Phân bổ theo xu hướng các ngày còn lại của 3 tháng gần nhất
+- Current run rate  
+- Comparison with the same period and previous month  
+- Allocation trend of the remaining days based on the last 3 months  
 
-Kết quả forecast được đối chiếu với target để đánh giá mức độ hoàn thành và phát hiện sớm rủi ro không đạt KPI.
+The forecast results are benchmarked against targets to assess completion probability and detect early risks of underperformance.
 
 ![pfm_PIC](images/forecast_tracker.png)
 
-### Sheet 6 – Hiệu suất theo shop
+---
 
-Sheet theo dõi hiệu suất từng shop theo bộ KPI của thành viên phụ trách. 
-Dashboard tự động cập nhật theo shop và thành viên được chọn.
+### Sheet 6 – Shop-Level Performance
 
-**Khối 1: Phân tích hiệu suất tương quan** 
-- ADO và GMV
-- Paid Ads và Impression
-- CPC và CTR
-  
-**Khối 2: Phân tích theo doanh thu và đơn hàng**
-- Trend theo ngày
-- Cơ cấu đóng góp
-- Phân bổ theo sub-category
-  
-**Khối 3: Phân tích theo kênh bán hàng: Livestream và Video**
-- Xu hướng đơn hàng theo kênh
-- Lượt thêm vào giỏ hàng theo kênh
-- Khả năng ra đơn hàng theo các ngày trong tuần
+This sheet tracks the performance of each shop based on the KPI set of the assigned member.  
+
+The dashboard automatically updates according to the selected shop and member.
+
+**Block 1: Correlation Performance Analysis**
+- ADO and GMV  
+- Paid Ads and Impressions  
+- CPC and CTR  
+
+**Block 2: Revenue & Order Analysis**
+- Daily trend  
+- Contribution structure  
+- Sub-category allocation  
+
+**Block 3: Sales Channel Analysis – Livestream & Video**
+- Order trends by channel  
+- Add-to-cart performance by channel  
+- Conversion performance by day of the week  
 
 ![pfm_shop](images/pfm_shop.png)
 
-**FILE CHI TIẾT** [TẠI ĐÂY](https://docs.google.com/spreadsheets/d/1Yenltej4gWU9nJimhRiPbkxyMMUPeSArb9E1LzAAtMI/edit?gid=1802438500#gid=1802438500)
+---
 
-## 4. Giá trị hệ thống
+**FULL FILE** [HERE](https://docs.google.com/spreadsheets/d/1Yenltej4gWU9nJimhRiPbkxyMMUPeSArb9E1LzAAtMI/edit?gid=1802438500#gid=1802438500)
 
-- Xây dựng framework theo dõi hiệu suất đa tầng từ Task → Member → Shop
+---
 
-- Chuẩn hóa cách đo lường KPI trong team
+## 4. System Value
 
-- Tích hợp performance tracking và forecasting trong cùng một hệ thống
-
-- Hỗ trợ ra quyết định dựa trên dữ liệu thay vì báo cáo thủ công
+- Builds a multi-layer performance tracking framework from **Task → Member → Shop**  
+- Standardizes KPI measurement across the team  
+- Integrates performance tracking and forecasting within a single system  
+- Enables data-driven decision-making instead of manual reporting  
