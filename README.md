@@ -1,5 +1,7 @@
 # Team Performance Tracking System – Google Sheets
 
+Read this in: **English** | [Tiếng Việt](README_VI.md)
+
 ## 1. **Project Overview**
 
 This project builds a **Performance Tracking System** for a team using Google Sheets, enabling:
